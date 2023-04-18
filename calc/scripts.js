@@ -68,7 +68,10 @@ function vvod2() {
 function glav() {
     let sum = document.querySelector(".plus");
     let umn = document.querySelector(".umn");
-     let umn = document.querySelector(".plus_minus");
+    let plus_minus = document.querySelector(".plus-minus");
+    let percent = document.querySelector(".percent");
+    let minus = document.querySelector(".minus");
+    
     sum.addEventListener("click", () => { main.push("sum") })
     umn.addEventListener("click", () => { main.push("umn") })
 }
