@@ -74,6 +74,8 @@ function glav() {
     
     sum.addEventListener("click", () => { main.push("sum") })
     umn.addEventListener("click", () => { main.push("umn") })
+    percent.addEventListener("click", () => { main.push("percent") })
+    minus.addEventListener("click", () => { main.push("minus") })
 }
 
 // function sum() {
@@ -94,6 +96,14 @@ function mega_answer(answer) {
         }
         if (answer != 0 && main == "umn") {
             answer = Number(mas_vvod1[mas_vvod1.length - 1]) * Number(mas_vvod2[mas_vvod2.length - 1]);
+            vvod.innerText = Number(answer);
+        }
+         if (answer != 0 && main == "minus") {
+            answer = Number(mas_vvod1[mas_vvod1.length - 1]) - Number(mas_vvod2[mas_vvod2.length - 1]);
+            vvod.innerText = Number(answer);
+        }
+        if (answer != 0 && main == "percent") {
+            answer = Number(mas_vvod1[mas_vvod1.length - 1]) % Number(mas_vvod2[mas_vvod2.length - 1]);
             vvod.innerText = Number(answer);
         }
         console.log(mas_vvod1[mas_vvod1.length - 1]);
